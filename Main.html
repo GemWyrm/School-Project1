@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="container">
         <input type="text" name="name" id="name" placeholder="Character Name">
         <form action="#">
             <label for="clslvl">Class&nbsp;&amp;&nbsp;Level</label>
@@ -33,7 +33,7 @@
         <a href="Spells.html">Spells</a>
         <a href="Login.html">Log Out</a>
     </nav>
-    <section class="abilities">
+    <section class="abilities container">
         <label for="prof"><input type="number" name="prof" id="prof">Proficiency</label><br>
         <label for="inspo"><input type="checkbox" name="inspo" id="inspo">Inspiration</label><br>
         <form action="#" class="skills saves">
@@ -104,7 +104,7 @@
         </form>
         <label for="passive"><input type="number" name="passive" id="passive">Passive&nbsp;Wisdom&nbsp;&lpar;Wisdom&rpar;</label>
     </section>
-    <section class="defense">
+    <section class="defense container">
         <label for="ac">Armor&nbsp;Class</label>
         <input type="number" name="ac" id="ac">
         <label for="init">Initiative</label>
@@ -135,7 +135,7 @@
             Death&nbsp;Saves
         </form>
     </section>
-    <section class="person">
+    <section class="person container">
         <form action="#">
             <label for="traits">Personality&nbsp;Traits</label>
             <textarea name="traits" id="traits" cols="30" rows="10"></textarea>
@@ -153,15 +153,15 @@
             <textarea name="flaws" id="flaws" cols="30" rows="10"></textarea>
         </form>
     </section>
-    <section class="attack">
+    <section class="attack container">
         <label for="attack">Attacks&nbsp;&amp;&nbsp;Spellcasting</label>
         <textarea name="attack" id="attack" cols="30" rows="10"></textarea>
     </section>
-    <section class="other">
+    <section class="other container">
         <label for="other">Tool&nbsp;Proficiencies&nbsp;&amp;&nbsp;Languages</label>
         <textarea name="other" id="other" cols="30" rows="10"></textarea>
     </section>
-    <section class="equip">
+    <section class="equip container">
         <aside>
             <form action="#">
                 <label for="cp">CP</label>
@@ -187,7 +187,7 @@
         <label for="equip">Equipment</label>
         <textarea name="equip" id="equip" cols="30" rows="10"></textarea>
     </section>
-    <section class="features">
+    <section class="features container">
         <label for="features">Features&nbsp;&amp;&nbsp;Traits</label>
         <textarea name="features" id="features" cols="30" rows="10"></textarea>
     </section>
