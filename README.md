@@ -5,5 +5,5 @@ Users can input and track character information
 Using CSS and HTML
 Future improvements:
     1. Save information online and offline.
-    2.
-    3.
+    2. Version history for players.
+    3. Share to Game Master.
