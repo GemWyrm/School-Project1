@@ -5,18 +5,19 @@ html {
    *, *::before, *::after {
     box-sizing: inherit; margin: 0; padding: 0;
 }
-/**/
+/*Set page size*/
 body {
     width: 8.5in; height: 11in; font-size: 8pt; margin: auto !important;
 }
+/*Header*/
 header {
-    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-color: transparent; padding: 10px;
+    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-color: transparent; padding: 10px 10px 1px;
 }
 header>input {
-    flex-grow: 1;
+    width: 37%;
 }
 header>form {
-    border: 1px solid black; background-color: gainsboro; width: 60%; flex-wrap: wrap;
+    border: 1px solid black; background-color: gainsboro; width: 62%; display: grid; grid-template-columns: 1fr 1fr 1fr;
 }
 #clslvl {
     order: 1;
@@ -54,14 +55,19 @@ header>form {
 .xp {
     order: 12;
 }
-header>form>label {
-    
+header>form>fieldset {
+    display: inline-block;
 }
-header>form>input {
-    border: none; border-bottom: 2px inset; background-color: gainsboro; width: 33%;
+header>form input {
+    border: none; border-bottom: 2px inset; background-color: gainsboro; width: 100%;
 }
+/*Nav*/
+.btn-primary {
+    margin-left: 10px;
+}
+/*Main*/
 main {
-    display: grid; grid-template-columns: auto auto auto; gap: 10px; padding: 10px; height: calc(100% - 72px);/*This will need to be modified once header and nav are styled properly*/
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 1px 10px 10px; height: calc(100% - 72px);/*This will need to be modified once header and nav are styled properly*/
 }
 section {
     border: 1px solid black; background-color: gainsboro;
