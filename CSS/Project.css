@@ -11,7 +11,7 @@ body {
 }
 /*Header*/
 header {
-    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-color: transparent; padding: 10px 10px 1px;
+    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 77px;  background-color: transparent; padding: 10px 10px 1px;
 }
 header>input {
     width: 37%;
