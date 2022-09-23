@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="container">
+    <header>
         <input type="text" name="name" id="name" placeholder="Character Name">
         <form action="#">
             <label for="clslvl">Class&nbsp;&amp;&nbsp;Level</label>
@@ -33,8 +33,8 @@
         <a href="Spells.html">Spells</a>
         <a href="Login.html">Log Out</a>
     </nav>
-    <main class="container">
-        <section class="abilities col">
+    <main>
+        <section class="abilities">
             <label for="prof"><input type="number" name="prof" id="prof">Proficiency</label><br>
             <label for="inspo"><input type="checkbox" name="inspo" id="inspo">Inspiration</label><br>
             <form action="#" class="skills saves row">
@@ -105,7 +105,11 @@
             </form>
             <label for="passive"><input type="number" name="passive" id="passive">Passive&nbsp;Wisdom&nbsp;&lpar;Wisdom&rpar;</label>
         </section>
-        <section class="defense col">
+        <section class="other">
+            <label for="other">Tool&nbsp;Proficiencies&nbsp;&amp;&nbsp;Languages</label>
+            <textarea name="other" id="other" cols="20" rows="3"></textarea>
+        </section>
+        <section class="defense">
             <label for="ac">Armor&nbsp;Class</label>
             <input type="number" name="ac" id="ac">
             <label for="init">Initiative</label>
@@ -136,33 +140,11 @@
                 Death&nbsp;Saves
             </form>
         </section>
-        <section class="person col">
-            <form action="#">
-                <label for="traits">Personality&nbsp;Traits</label>
-                <textarea name="traits" id="traits" cols="30" rows="10"></textarea>
-            </form>
-            <form action="#">
-                <label for="ideals">Ideals</label>
-                <textarea name="ideals" id="ideas" cols="30" rows="10"></textarea>
-            </form>
-            <form action="#">
-                <label for="bonds">bonds</label>
-                <textarea name="bonds" id="bonds" cols="30" rows="10"></textarea>
-            </form>
-            <form action="#">
-                <label for="flaws">flaws</label>
-                <textarea name="flaws" id="flaws" cols="30" rows="10"></textarea>
-            </form>
-        </section>
-        <section class="attack col">
+        <section class="attack">
             <label for="attack">Attacks&nbsp;&amp;&nbsp;Spellcasting</label>
-            <textarea name="attack" id="attack" cols="30" rows="10"></textarea>
+            <textarea name="attack" id="attack" cols="20" rows="3"></textarea>
         </section>
-        <section class="other col">
-            <label for="other">Tool&nbsp;Proficiencies&nbsp;&amp;&nbsp;Languages</label>
-            <textarea name="other" id="other" cols="30" rows="10"></textarea>
-        </section>
-        <section class="equip col">
+        <section class="equip">
             <aside>
                 <form action="#">
                     <label for="cp">CP</label>
@@ -186,11 +168,29 @@
                 </form>
             </aside>
             <label for="equip">Equipment</label>
-            <textarea name="equip" id="equip" cols="30" rows="10"></textarea>
+            <textarea name="equip" id="equip" cols="20" rows="3"></textarea>
         </section>
-        <section class="features col">
+        <section class="person">
+            <form action="#">
+                <label for="traits">Personality&nbsp;Traits</label>
+                <textarea name="traits" id="traits" cols="20" rows="3"></textarea>
+            </form>
+            <form action="#">
+                <label for="ideals">Ideals</label>
+                <textarea name="ideals" id="ideas" cols="20" rows="3"></textarea>
+            </form>
+            <form action="#">
+                <label for="bonds">bonds</label>
+                <textarea name="bonds" id="bonds" cols="20" rows="3"></textarea>
+            </form>
+            <form action="#">
+                <label for="flaws">flaws</label>
+                <textarea name="flaws" id="flaws" cols="20" rows="3"></textarea>
+            </form>
+        </section>
+        <section class="features">
             <label for="features">Features&nbsp;&amp;&nbsp;Traits</label>
-            <textarea name="features" id="features" cols="30" rows="10"></textarea>
+            <textarea name="features" id="features" cols="20" rows="3"></textarea>
         </section>
     </main>
 </body>

@@ -1,0 +1,41 @@
+/*CSS reset. Source: https://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+html {
+    box-sizing: border-box; font-size: 10px;
+}
+   *, *::before, *::after {
+    box-sizing: inherit; margin: 0; padding: 0;
+}
+/**/
+body {
+    width: 8.5in; height: 11in; font-size: 8pt;
+}
+main {
+    display: grid; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(2, auto); grid-auto-flow: row;
+}
+section {
+    width: 30%; margin: 10px;
+}
+form {
+    border: 1px solid black; margin: 10px;
+}
+.abilities {
+    height: 690pt; width: 270pt;
+}
+.other {
+    width: 270 pt; height: 230pt;
+}
+.defense {
+    width: 270pt; height: 340pt;
+}
+.attack {
+    width: 270pt; height: 290pt;
+}
+.equip {
+    width: 270pt; height: 290pt;
+}
+.person {
+    width: 270pt; height: 340pt;
+}
+.features {
+    width: 270pt; height: 580pt;
+}
