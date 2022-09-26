@@ -94,11 +94,23 @@ section>form {
 .prof, .inspo, .ability, .passive {
     padding: 5px 0;
 }
+#prof, #inspo, #passive {
+    width: 50px; height: 30px;
+}
+#prof, #passive {
+    text-align: center;
+}
 ul {
-    list-style-type: none; padding: 5px 0 0;
+    list-style-type: none; padding: 5px 0 0; padding-left: 10px !important;
 }
 input[type=checkbox] {
-    border-radius: 100%; 
+    border-radius: 100%;
+}
+.ability input[type=number] {
+    font-size: xx-large; text-align: center;
+}
+.ability label {
+    
 }
 .abilities {
     grid-row: 1/3;
