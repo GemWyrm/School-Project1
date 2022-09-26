@@ -109,14 +109,11 @@ section>form {
 ul {
     list-style-type: none; padding: 5px 0 0; padding-left: 10px !important; margin-bottom: 0 !important;
 }
-input[type=checkbox] {
-    border-radius: 100%;
+hr {
+    margin: 0 !important;
 }
 .ability input[type=number] {
     font-size: xx-large; text-align: center;
-}
-.ability label {
-    
 }
 .abilities {
     grid-row: 1/3;
