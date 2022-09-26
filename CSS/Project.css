@@ -81,24 +81,23 @@ section>form {
 ul {
     list-style-type: none;
 }
+input[type=checkbox] {
+    border-radius: 100%; 
+}
 .abilities {
     grid-row: 1/3;
 }
-.str {
-    border: 1px solid black;
-    margin-left: 5px; display: grid; grid-template-columns: 1fr 1fr;
+.ability {
+    display: grid; grid-template-columns: 1fr 1fr;
 }
-.str>div {
-    order: 1; display: grid;
+.ability>label {
+    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around;
 }
-.str>ul {
-    order: 2;
+.ability>label>input {
+    width: 50px; height: 50px; border: none; background: transparent;
 }
-.strlabel {
-    order: 2;
-}
-#str {
-    order: 1; width: 50%; height: 50px;
+.ability>ul {
+    border-top: 1px solid black;
 }
 .defense {
     
