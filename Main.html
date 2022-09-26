@@ -26,7 +26,7 @@
             </fieldset>
             <fieldset>
                 <input type="text" name="playername" id="playername">
-                <label for="playername" class="playername">Player&nbsp;name</label>
+                <label for="playername" class="playername">Player&nbsp;Name</label>
             </fieldset>
             <fieldset>
                 <input type="text" name="race" id="race">
@@ -42,7 +42,7 @@
             </fieldset>
         </form>
     </header>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i><!--&#9776;--></button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i><!--&#9776; is the unicode for hamburger--></button>
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Additional Sheets</h5>
@@ -61,11 +61,18 @@
             <label for="prof"><input type="number" name="prof" id="prof">Proficiency</label><br>
             <label for="inspo"><input type="checkbox" name="inspo" id="inspo">Inspiration</label><br>
             <form action="#" class="skills saves row">
-                <label for="str">Strength<input type="number" name="str" id="str"></label>
-                <input type="checkbox" name="save" class="save">
-                <label for="save">Saving&nbsp;Throws</label>
-                <input type="checkbox" name="skill" class="skill">
-                <label for="skill">Athletics</label>
+                <fieldset class="str">
+                    <div>
+                        <input type="number" name="str" id="str">
+                        <label for="str" class="strlabel">Strength</label>
+                    </div>
+                    <ul class="saveskill">
+                        <input type="checkbox" name="save" class="save">
+                        <label for="save">Saving&nbsp;Throws</label>
+                        <input type="checkbox" name="skill" class="skill">
+                        <label for="skill">Athletics</label>
+                    </ul>
+                </fieldset>
             </form>
             <form action="#" class="skills saves">
                 <label for="dex">Dexterity<input type="number" name="dex" id="dex"></label>
