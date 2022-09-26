@@ -7,17 +7,26 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in; height: 11in; font-size: 8pt; margin: auto !important;
+    width: 8.5in;
+    height: 11in;
+    font-size: 10pt !important;
+    margin: auto !important;
 }
 /*Header*/
 header {
-    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 77px;  background-color: transparent; padding: 10px 10px 1px;
+    display: flex; width: 100%; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 125px;  background-color: transparent; padding: 10px 10px 1px; position: relative;
+}
+header::before {
+    position: absolute; content: ""; background-color: rgba(255, 255, 255, .6); inset: 0;
 }
 header>input, header>form {
-    background: transparent;
+    background: transparent; position: relative;
 }
 header>input {
     width: 37%;
+}
+header form label {
+    font-size: 8pt;
 }
 header>form {
     border: 1px solid black; width: 62%; display: grid; grid-template-columns: 1fr 1fr 1fr;
@@ -69,6 +78,9 @@ header>form input {
     margin-left: 10px;
 }
 /*Main*/
+header>input[type=text] {
+    font-size: 20pt !important;
+}
 main {
     display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 1px 10px 10px; height: calc(100% - 72px);/*This will need to be modified once header and nav are styled properly*/
 }
@@ -78,8 +90,12 @@ section {
 section>form {
     
 }
+/*Abilities*/
+.prof, .inspo, .ability, .passive {
+    padding: 5px 0;
+}
 ul {
-    list-style-type: none;
+    list-style-type: none; padding: 5px 0 0;
 }
 input[type=checkbox] {
     border-radius: 100%; 
