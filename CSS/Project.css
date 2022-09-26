@@ -91,14 +91,20 @@ section>form {
     
 }
 /*Abilities*/
+.profinspo {
+    display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;
+}
 .prof, .inspo, .ability, .passive {
     padding: 5px 0;
 }
 #prof, #inspo, #passive {
-    width: 50px; height: 30px;
+    width: 100%; height: 30px;
 }
 #prof, #passive {
     text-align: center;
+}
+.prof, .inspo, .passive {
+    text-align: center; align-items: center;
 }
 ul {
     list-style-type: none; padding: 5px 0 0; padding-left: 10px !important;
@@ -126,6 +132,9 @@ input[type=checkbox] {
 }
 .ability>ul {
     border-top: 1px solid black;
+}
+.passive {
+    display: grid; grid-template-columns: 1fr 3fr;
 }
 .defense {
     
