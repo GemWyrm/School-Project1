@@ -7,10 +7,7 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in;
-    height: 11in;
-    font-size: 10pt !important;
-    margin: auto !important;
+    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important;
 }
 /*Header*/
 header {
@@ -87,21 +84,18 @@ main {
 section {
     border: 1px solid black; background-color: gainsboro;
 }
-section>form {
-    
-}
 /*Abilities*/
 .profinspo {
     display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;
 }
-.prof, .inspo, .ability, .passive {
-    padding: 2px 0;
+.prof, .inspo, .ability, .passive, .deftop {
+    padding: 2px 0;/*Other sections added here*/
 }
 #prof, #inspo, #passive {
     width: 100%; height: 30px;
 }
-#prof, #passive {
-    text-align: center;
+#prof, #passive, #speed, #init, #ac, #hpcurrent, #hpmax, #tmp, #totalhd, #hd {
+    text-align: center;/*Many number inputs here, not just abilities*/
 }
 .prof, .inspo, .passive {
     text-align: center; align-items: center;
@@ -121,17 +115,48 @@ hr {
 .ability {
     display: grid; grid-template-columns: 1fr 1fr;
 }
-.ability>label {
-    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around;
+.ability>label, .defense>label {
+    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around;/*Some defenses added here*/
 }
-.ability>label>input {
-    width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;
+.ability>label>input, .defense>label>input, .deftop input, #hpcurrent, #hd {
+    width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;/*Some defenses added here*/
 }
 .ability>ul {
     border-top: 1px solid black;
 }
 .passive {
     display: grid; grid-template-columns: 1fr 3fr;
+}
+/*Defenses*/
+.deftop, .defbottom {
+    display: flex; text-align: center; align-items: center; justify-content: space-between; flex-basis: 0;
+}
+.speed, .init, .ac {
+    border: 1px solid black; background-color: white; width: 80px;
+}
+.hp {
+    border: 1px solid black; background-color: white;
+}
+#hpmax {
+    border: none; border-bottom: 2px inset; background: transparent; width: 58%;
+}
+.hptop {
+    display: flex;
+}
+.hpbottom, .hdbottom {
+    display: flex; flex-direction: column; text-align: center; 
+}
+.hd, .ds {
+    border: 1px solid black; background-color: white; width: 124px;
+}
+#totalhd {
+    border: none; border-bottom: 2px inset; background: transparent; width: 70%;
+}
+.ds>label {
+    float: right;
+}
+.hp, .tmp, .defbottom {
+    margin: 2px 0;
 }
 .defense {
     

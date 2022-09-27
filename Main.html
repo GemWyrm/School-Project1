@@ -160,37 +160,44 @@
                     <label for="skill">Persuasion</label>
                 </ul>
             </form>
-            <label for="passive" class="passive"><input type="number" name="passive" id="passive">Passive&nbsp;Wisdom&nbsp;&lpar;Wisdom&rpar;</label>
+            <label for="passive" class="passive"><input type="number" name="passive" id="passive">Passive&nbsp;Wisdom&nbsp;&lpar;Wisdom&rpar;</label><!--This may need to be moved to the .other section-->
         </section>
         <section class="defense">
-            <label for="ac">Armor&nbsp;Class</label>
-            <input type="number" name="ac" id="ac">
-            <label for="init">Initiative</label>
-            <input type="number" name="init" id="init">
-            <label for="speed">Speed</label>
-            <input type="number" name="speed" id="speed">
-            <form action="#">
-                <label for="hpmax">Hit&nbsp;Point&nbsp;Maximum</label>
-                <input type="number" name="hpmax" id="hpmax">
-                <label for="hpcurrent">Current&nbsp;Hit&nbsp;Points</label>
-                <input type="number" name="hpcurrent" id="hpcurrent">
+            <form action="#" class="deftop">
+                <label for="ac" class="ac"><input type="number" name="ac" id="ac">Armor&nbsp;Class</label>
+                <label for="init" class="init"><input type="number" name="init" id="init">Initiative</label>
+                <label for="speed" class="speed"><input type="number" name="speed" id="speed">Speed</label>
             </form>
-            <label for="tmp">Temporary&nbsp;Hit&nbsp;Points</label>
-            <input type="number" name="tmp" id="tmp">
-            <form action="#">
-                <label for="totalhd">Total</label>
-                <input type="number" name="totalhd" id="totalhd">
+            <form action="#" class="hp">
+                <fieldset class="hptop">
+                    <label for="hpmax">Hit&nbsp;Point&nbsp;Maximum</label>
+                    <input type="number" name="hpmax" id="hpmax">
+                </fieldset>
+                <fieldset class="hpbottom">
+                    <input type="number" name="hpcurrent" id="hpcurrent">
+                    <label for="hpcurrent">Current&nbsp;Hit&nbsp;Points</label>
+                </fieldset>
             </form>
-            <form action="#">
-                <label for="succeedds">Successes</label>
-                <input type="checkbox" name="succeedds" class="succeedds">
-                <input type="checkbox" name="succeedds" class="succeedds">
-                <input type="checkbox" name="succeedds" class="succeedds">
-                <label for="failds">Failures</label>
-                <input type="checkbox" name="failds" class="failds">
-                <input type="checkbox" name="failds" class="failds">
-                <input type="checkbox" name="failds" class="failds">
-                Death&nbsp;Saves
+            <label for="tmp" class="tmp"><input type="number" name="tmp" id="tmp" min="0">Temporary&nbsp;Hit&nbsp;Points</label>
+            <form action="#" class="defbottom">
+                <fieldset class="hd">
+                    <label for="totalhd">Total</label>
+                    <input type="number" name="totalhd" id="totalhd">
+                    <label for="hd" class="hdbottom"><input type="number" name="hd" id="hd">Hit&nbsp;Dice</label>
+                </fieldset>
+                <fieldset class="ds">
+                    <label for="succeedds">Successes
+                            <input type="checkbox" name="succeedds" class="succeedds">
+                            <input type="checkbox" name="succeedds" class="succeedds">
+                            <input type="checkbox" name="succeedds" class="succeedds">
+                    </label>
+                    <label for="failds">Failures
+                            <input type="checkbox" name="failds" class="failds">
+                            <input type="checkbox" name="failds" class="failds">
+                            <input type="checkbox" name="failds" class="failds">
+                    </label>
+                    Death&nbsp;Saves
+                </fieldset>
             </form>
         </section>
         <section class="person">
