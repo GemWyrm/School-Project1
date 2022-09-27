@@ -170,11 +170,26 @@ hr {
 .other>textarea, .features>textarea, .attack>textarea {
     width: 100%; height: 75%;
 }
-.other, .features, .attack {
+.other, .features, .attack, .equip {
     text-align: center;
 }
-.equip {
-    
+#cp, #sp, #ep, #gp, #pp {
+    width: 20px;
+}
+.equip>aside {
+    float: left; position: absolute; z-index: 1;
+}
+.equip>aside>form {
+    display: flex; justify-content: end;
+}
+.equip>#equip {
+    width: 100%; height: 46.3%; padding-left: 40px; margin-bottom: 0; padding-bottom: 0; border-bottom: none;
+}
+.equip>.equip2 {
+    width: 100%; height: 41%; margin-top: -5px; padding-top: 0; border-top: none;
+}
+.equip, .equip>label, .equip>textarea {
+    position: relative;
 }
 .features {
     grid-row: 2/4; grid-column-start: 3;
