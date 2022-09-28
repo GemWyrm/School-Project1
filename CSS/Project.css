@@ -101,7 +101,7 @@ section {
     text-align: center; align-items: center;
 }
 ul {
-    list-style-type: none; padding: 5px 0 0; padding-left: 10px !important; margin-bottom: 0 !important; font-size: smaller;
+    list-style-type: none; padding: 5px 0 0; padding-left: 10px !important; margin-bottom: 0 !important; font-size: smaller; border-top: 1px solid black;
 }
 hr {
     margin: -2px 0 2px !important;
@@ -120,9 +120,6 @@ hr {
 }
 .ability>label>input, .defense>label>input, .deftop input, #hpcurrent, #hd {
     width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;/*Some defenses added here*/
-}
-.ability>ul {
-    border-top: 1px solid black;
 }
 .passive {
     display: grid; grid-template-columns: 1fr 3fr;
