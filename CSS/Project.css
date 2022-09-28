@@ -90,8 +90,23 @@ header>input#name[type=text] {
 main {
     display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 10px; padding: 1px 10px 5px; height: calc(100% - 117px);/*This will need to be modified once header and nav are styled properly*/
 }
+main.spellspg {
+    display: flex; flex-direction: column; flex-wrap: wrap; gap: 0; justify-content: space-between;
+}
 section {
     border: 1px solid black; background-color: gainsboro;
+}
+.spellspg>section {
+    width: 33%;
+}
+.lvl>input[type='text'], .cantrip>input {
+    border: none; border-bottom: 2px inset; background: transparent;  border-color: rgba(0,0,0,.7); padding-top: 2px;
+}
+.cantrip>input {
+    width: 100%;
+}
+.lvl>input[type='text'] {
+    width: 95%;
 }
 /*Abilities*/
 .profinspo {
