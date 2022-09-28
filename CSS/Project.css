@@ -164,8 +164,8 @@ hr {
 .hp, .tmp, .defbottom {
     margin: 2px 0;
 }
-.person {
-    
+.person textarea {
+    width: 100%;
 }
 .attack>textarea {
     width: 100%; height: 88%;
@@ -173,7 +173,7 @@ hr {
 .other>textarea {
     width: 100%; height: 75%;
 }
-.other, .features, .attack, .equip {
+.other, .features, .attack, .equip, .person {
     text-align: center;
 }
 #cp, #sp, #ep, #gp, #pp {
