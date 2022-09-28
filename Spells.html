@@ -13,6 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <input type="text" name="class" id="class" placeholder="Spellcasting Class">
+        <form action="#" class="spellabs">
+            <label for="abs" class="abs"><input type="number" name="abs" id="abs">Spellcasting&nbsp;Ability</label>
+            <label for="dc" class="dc"><input type="number" name="dc" id="dc">Spell&nbsp;Save&nbsp;DC</label>
+            <label for="bonus" class="bonus"><input type="number" name="bonus" id="bonus">Spell&nbsp;Attack&nbsp;Bonus</label>
+        </form>
+    </header>
     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
@@ -27,6 +35,5 @@
             </nav>
         </div>
     </div>
-    You made it!
 </body>
 </html>
