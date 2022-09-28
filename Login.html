@@ -12,16 +12,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>Welcome</header>
-    <main>
+    <header><h1>Welcome</h1></header>
+    <main class="login">
         <form action="Main.html">
             <fieldset>
                 <legend>Login Information</legend>
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" required>
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password" required>
-                <button type="submit">Login</button>
+                <div>
+                    <section class="left">
+                        <label for="name">Name:&nbsp;</label><br>
+                        <label for="charname">Character&nbsp;Name:&nbsp;</label><br>
+                        <label for="password">Password:&nbsp;</label>
+                    </section>
+                    <section class="right">
+                        <input type="text" name="name" id="name" required><br>
+                        <input type="text" name="charname" id="charname"><br>
+                        <input type="password" name="password" id="password" required>
+                    </section>
+                </div>
+                <img src="/Dungeon_Entrance 1.jpg" alt="Entrance"><br>
+                <button type="submit">Enter!</button>
             </fieldset>
         </form>
     </main>

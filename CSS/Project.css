@@ -13,11 +13,14 @@ body {
 header {
     display: flex; width: 100%; height: 98px; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 125px;  background-color: transparent; padding: 5px 10px 1px; position: relative;
 }
+header>h1 {
+    margin: auto; z-index: 0;
+}
 header::before {
     position: absolute; content: ""; background-color: rgba(255, 255, 255, .6); inset: 0;
 }
 header>input, header>form {
-    background: transparent; position: relative;
+    background: transparent; position: relative; z-index: 1;
 }
 header>input {
     width: 37%; text-align: center;
@@ -107,6 +110,21 @@ section {
 }
 .lvl>input[type='text'] {
     width: 95%;
+}
+main.login {
+    display: inline-block; width: 100%;
+}
+.login fieldset {
+    text-align: center;
+}
+.login fieldset>div {
+    display: grid; grid-template-columns: 1fr 1fr; justify-content: center; margin: 0 auto; width: max-content; text-align: end;
+}
+.login .left>label {
+    padding: 2px 0;
+}
+.login fieldset img {
+    margin-top: 20px; margin-bottom: 20px; border-radius: 10%;
 }
 /*Abilities*/
 .profinspo {
