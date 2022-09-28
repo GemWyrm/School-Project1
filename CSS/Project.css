@@ -170,7 +170,7 @@ hr {
 .attack>textarea {
     width: 100%; height: 88%;
 }
-.other>textarea, .features>textarea {
+.other>textarea {
     width: 100%; height: 75%;
 }
 .other, .features, .attack, .equip {
@@ -196,4 +196,7 @@ hr {
 }
 .features {
     grid-row: 2/4; grid-column-start: 3;
+}
+.features>textarea {
+    width: 100%; height: 93.9%;
 }
