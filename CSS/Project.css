@@ -20,7 +20,7 @@ header>input, header>form {
     background: transparent; position: relative;
 }
 header>input {
-    width: 37%;
+    width: 37%; text-align: center;
 }
 header form.classinfo label {
     font-size: 8pt;
