@@ -7,7 +7,6 @@
     <title>Character Sheet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/Project.css">
-    <script src="/js/Project.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -66,7 +65,7 @@
                 <label for="inspo" class="inspo">Inspiration</label>
             </div>
             <form action="#" class="ability">
-                    <label for="str"><input type="number" name="str" id="str">Strength</label>
+                    <label for="str"><input type="number" name="str" id="str"><output id="strOutput"></output>Strength</label>
                     <ul>
                         <input type="checkbox" name="save" class="save">
                         <label for="save">Saving&nbsp;Throws</label>
@@ -76,7 +75,7 @@
                     </ul>
             </form>
             <form action="#" class="ability">
-                <label for="dex"><input type="number" name="dex" id="dex">Dexterity</label>
+                <label for="dex"><input type="number" name="dex" id="dex"><output id="dexOutput"></output>Dexterity</label>
                 <ul>
                     <input type="checkbox" name="save" class="save">
                     <label for="save">Saving&nbsp;Throws</label>
@@ -92,14 +91,14 @@
                 </ul>
             </form>
             <form action="#" class="ability">
-                <label for="con"><input type="number" name="con" id="con">Constitution</label>
+                <label for="con"><input type="number" name="con" id="con"><output id="conOutput"></output>Constitution</label>
                 <ul>
                     <input type="checkbox" name="save" class="save">
                     <label for="save">Saving&nbsp;Throws</label>
                 </ul>
             </form>
             <form action="#" class="ability">
-                <label for="int"><input type="number" name="int" id="int">Intelligence</label>
+                <label for="int"><input type="number" name="int" id="int"><output id="intOutput"></output>Intelligence</label>
                 <ul>
                     <input type="checkbox" name="save" class="save">
                     <label for="save">Saving&nbsp;Throws</label>
@@ -121,7 +120,7 @@
                 </ul>
             </form>        
             <form action="#" class="ability">
-                <label for="wis"><input type="number" name="wis" id="wis">Wisdom</label>
+                <label for="wis"><input type="number" name="wis" id="wis"><output id="wisOutput"></output>Wisdom</label>
                 <ul>
                     <input type="checkbox" name="save" class="save">
                     <label for="save">Saving&nbsp;Throws</label>
@@ -143,7 +142,7 @@
                 </ul>
             </form>
             <form action="#" class="ability">
-                <label for="cha"><input type="number" name="cha" id="cha">Charisma</label>
+                <label for="cha"><input type="number" name="cha" id="cha"><output id="chaOutput"></output>Charisma</label>
                 <ul>
                     <input type="checkbox" name="save" class="save">
                     <label for="save">Saving&nbsp;Throws</label>
@@ -261,3 +260,4 @@
     </main>
 </body>
 </html>
+<script type="text/javascript" src="/js/Project.js"></script>
