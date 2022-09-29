@@ -149,7 +149,7 @@ hr {
     margin: -2px 0 2px !important;
 }
 .ability input[type=number] {
-    font-size: xx-large; text-align: center;
+    font-size: x-large; text-align: center;
 }
 .abilities {
     grid-row: 1/3;
