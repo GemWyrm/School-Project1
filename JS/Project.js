@@ -31,7 +31,7 @@ cha.addEventListener('input', letter => {
 
 //const btnInput = document.getElementById("btn");//This is for saving to local storage. Trying to save and return, but it doesn't work yet.
 
-const playInput = document.querySelector('input', 'textarea')
+const playInput = document.querySelector('input, textarea')
 const save = () => {
     localStorage.setItem('charInput', playInput.textContent)
 }
