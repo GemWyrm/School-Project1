@@ -157,11 +157,14 @@ hr {
 .ability {
     display: grid; grid-template-columns: 1fr 1fr;
 }
-.ability>label, .defense>label {
-    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around;/*Some defenses added here*/
+.ability>label {
+    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 3fr 2fr; justify-content: space-around;
 }
-.ability>label>input, .defense>label>input, .deftop input, #hpcurrent, #hd {
-    width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;/*Other inputs added here*/
+.ability>label>input {
+    width: 50px; height: 30px; border: none; background: transparent; margin: 0 auto;
+}
+.ability output {
+    border: 1px solid black; text-align: center;
 }
 .passive {
     display: grid; grid-template-columns: 1fr 3fr;
@@ -172,6 +175,9 @@ hr {
 }
 .speed, .init, .ac {
     border: 1px solid black; background-color: white; width: 80px;
+}
+.defense>label>input, .deftop input, #hpcurrent, #hd {
+    width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;/*Other inputs added here*/
 }
 .hp {
     border: 1px solid black; background-color: white;
@@ -184,6 +190,9 @@ hr {
 }
 .hpbottom, .hdbottom {
     display: flex; flex-direction: column; text-align: center; 
+}
+.defense>label {
+    border: 1px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around;
 }
 .hd, .ds {
     border: 1px solid black; background-color: white; width: 124px;
