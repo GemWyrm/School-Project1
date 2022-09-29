@@ -35,9 +35,7 @@ const playInput = document.querySelector('input, textarea')
 const save = () => {
     localStorage.setItem('charInput', playInput.textContent)
 }
-playInput.addEventListener('keydown', letter => {
-    playInput.textContent = letter.target.value
-}, save)
+playInput.addEventListener('keydown', save)
 const storedInput = localStorage.getItem('charInput')
 if (playInput) {
     playInput.textContent = storedInput
