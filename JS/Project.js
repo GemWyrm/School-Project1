@@ -33,10 +33,10 @@ cha.addEventListener('input', letter => {
 
 const playInput = document.querySelector('input, textarea')
 const save = () => {
-    localStorage.setItem('charInput', playInput.textContent)
+    localStorage.setItem('charInput', playInput.value)
 }
 playInput.addEventListener('keydown', save)
 const storedInput = localStorage.getItem('charInput')
 if (playInput) {
-    playInput.textContent = storedInput
+    playInput.value = storedInput
 }
