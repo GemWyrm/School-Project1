@@ -7,7 +7,7 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important;
+    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909;
 }
 /*Header*/
 header {
@@ -95,6 +95,21 @@ header>input#class {
 .btn-primary {
     margin-left: 10px;
 }
+.mybtn {
+    width: 100px; height: 50px; font-size: x-large; border-radius: 5px;
+}
+.mybtn, .btn-primary {
+    background-color: #B7410E !important; border-color: #521A02 !important;
+}
+.mybtn:hover, .btn-primary:hover {
+    background-color: #914829 !important;
+}
+a {
+    color: #B7410E !important;
+}
+a:hover {
+    color: #914829 !important;
+}
 /*Main*/
 main {
     display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 10px; padding: 1px 10px 5px; height: calc(100% - 117px);/*This will need to be modified once header and nav are styled properly*/
@@ -103,7 +118,7 @@ main.spellspg {
     display: flex; flex-direction: column; flex-wrap: wrap; gap: 0; justify-content: space-between;
 }
 section {
-    border: 10px solid black !important; background-color: gainsboro; border-image: url(/borders-png-22972.png) 40 round !important;
+    border: 10px solid black !important; background-color: rgba(191, 163, 151, .4); border-image: url(/borders-png-22972.png) 40 round !important;
 }
 .spellspg>section {
     width: 33%; border-image: url(/borders-png-22972.png) 20 round !important; border-width: 2px !important;
