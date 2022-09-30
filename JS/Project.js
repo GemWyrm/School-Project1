@@ -29,9 +29,11 @@ cha.addEventListener('input', letter => {
 	chaOutput.textContent = Math.floor((letter.target.value - 10) / 2)
 });
 
-//const btnInput = document.getElementById("btn");//This is for saving to local storage. Trying to save and return, but it doesn't work yet.
 
-const playInput = document.querySelectorAll('input, textarea')
+
+//This is for saving to local storage. Trying to save and return, but it doesn't work yet.
+//const btnInput = document.getElementById("btn");
+/*const playInput = document.querySelectorAll('input, textarea')
 const save = () => {
     localStorage.setItem('charInput', playInput.value)
 }
@@ -39,4 +41,4 @@ playInput.addEventListener('keydown', save)
 const storedInput = localStorage.getItem('charInput')
 if (playInput) {
     playInput.value = storedInput
-}
+}*/
