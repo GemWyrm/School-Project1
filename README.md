@@ -1,8 +1,8 @@
 # School-Project1
-by Jared Clyde
-First School Project: Creating an HTML based Character Sheet for Table Top Role Playing Games (TTRPG)
-Users can input and track character information
-Using CSS, HTML and JS
+by Jared Clyde.
+First School Project: Creating an HTML based Character Sheet for Table Top Role Playing Games (TTRPG).
+Users can input and track character information. Name and Password information is not currently saved. Random letters are sufficient to allow login.
+Using CSS, HTML and JS.
 Future improvements:
     1. Save information online and offline.
     2. Version history for players.
