@@ -1,3 +1,4 @@
+//Math for each Ability Score
 const str = document.getElementById("str");
 const strOutput = document.getElementById("strOutput");
 str.addEventListener('input', letter => {
