@@ -88,6 +88,9 @@ header>form.classinfo input {
 header>input#name[type=text] {
     font-size: 20pt !important;
 }
+header>input#class {
+    font-size: 16pt;
+}
 /*Nav*/
 .btn-primary {
     margin-left: 10px;
@@ -113,7 +116,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .lvl>input[type='text'], .cantrip>input {
-    border: none; border-bottom: 2px inset; background: transparent;  border-color: rgba(0,0,0,.7); padding-top: 2px;
+    border: none; border-bottom: 2px inset; background: transparent;  border-color: rgba(0,0,0,.7); padding-top: 1px;
 }
 .cantrip>input {
     width: 100%;
