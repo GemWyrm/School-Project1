@@ -7,4 +7,4 @@ Future improvements:
     1. Save information online and offline.
     2. Version history for players.
     3. Share to Game Master.
-[Character Sheet](/login.html)
+[Character Sheet](/Login.html)
