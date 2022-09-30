@@ -7,14 +7,22 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909;
+    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909 !important; font-family: 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif !important;
+}
+@font-face {
+    font-family: "Aggressive Winter";
+    src: url(/AgressiveWinter-MVdGp.ttf) format("truetype"), url(/AgressiveWinter-rgdAx.otf) format("opentype");
+}
+@font-face {
+    font-family: "Vtks Velhos Tempo";
+    src: url(/VtksVelhosTempos-Awv7.ttf) format("truetype");
 }
 /*Header*/
 header {
     display: flex; width: 100%; height: 98px; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 125px;  background-color: transparent; padding: 5px 10px 1px; position: relative;
 }
 header>h1 {
-    margin: auto; z-index: 0;
+    margin: auto; z-index: 0; font-family: "Vtks Velhos Tempo", "Aggressive Winter", 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif; margin-bottom: 27px;
 }
 header::before {
     position: absolute; content: ""; background-color: rgba(255, 255, 255, .6); inset: 0;
@@ -96,7 +104,7 @@ header>input#class {
     margin-left: 10px;
 }
 .mybtn {
-    width: 100px; height: 50px; font-size: x-large; border-radius: 5px;
+    width: 100px; height: 50px; font-size: x-large; border-radius: 5px; font-family: "Aggressive Winter", "Vtks Velhos Tempo", 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif;
 }
 .mybtn, .btn-primary {
     background-color: #B7410E !important; border-color: #521A02 !important;
