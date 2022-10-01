@@ -7,24 +7,19 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in;
-    height: 11in;
-    font-size: 10pt !important;
-    margin: auto !important;
-    color: #0A0909 !important;
-    /* font-family: 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif !important; */
+    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909 !important; /*font-family: 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif !important;*/
 }
 @font-face {
     font-family: "Aggressive Winter";
-    src: url(/AgressiveWinter-MVdGp.ttf) format("truetype"), url(/AgressiveWinter-rgdAx.otf) format("opentype");
+    src: url(../AgressiveWinter-MVdGp.ttf) format("truetype"), url(../AgressiveWinter-rgdAx.otf) format("opentype");
 }
 @font-face {
     font-family: "Vtks Velhos Tempo";
-    src: url(/VtksVelhosTempos-Awv7.ttf) format("truetype");
+    src: url(../VtksVelhosTempos-Awv7.ttf) format("truetype");
 }
 /*Header*/
 header {
-    display: flex; width: 100%; height: 98px; justify-content: space-between; background-image: url("/banner.png"); background-size: 816px 125px;  background-color: transparent; padding: 5px 10px 1px; position: relative;
+    display: flex; width: 100%; height: 98px; justify-content: space-between; background-image: url("../banner.png"); background-size: 816px 125px;  background-color: transparent; padding: 5px 10px 1px; position: relative;
 }
 header>h1 {
     margin: auto; z-index: 0; font-family: "Vtks Velhos Tempo", "Aggressive Winter", 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif; margin-bottom: 27px;
@@ -36,19 +31,19 @@ header>input, header>form {
     background: transparent; position: relative; z-index: 1;
 }
 header>input {
-    width: 37%; text-align: center; border: 10px solid black; border-image: url(/borders-png-22972.png) 40 round;
+    width: 37%; text-align: center; border: 10px solid black; border-image: url(../borders-png-22972.png) 40 round;
 }
 header form.classinfo label {
     font-size: 8pt;
 }
 header>form.classinfo {
-    border: 10px solid black; width: 62%; display: grid; grid-template-columns: 1fr 1fr 1fr; border-image: url(/borders-png-22972.png) 40 round;
+    border: 10px solid black; width: 62%; display: grid; grid-template-columns: 1fr 1fr 1fr; border-image: url(../borders-png-22972.png) 40 round;
 }
 .classinfo>fieldset {
     margin-top: -3px;
 }
 header>form.spellabs {
-    border: 10px solid black; width: 62%; border-image: url(/borders-png-22972.png) 40 round;
+    border: 10px solid black; width: 62%; border-image: url(../borders-png-22972.png) 40 round;
 }
 .abs, .dc, .bonus {
     width: 116px;
@@ -131,10 +126,10 @@ main.spellspg {
     display: flex; flex-direction: column; flex-wrap: wrap; gap: 0; justify-content: space-between;
 }
 section {
-    border: 10px solid black !important; background-color: rgba(191, 163, 151, .4); border-image: url(/borders-png-22972.png) 40 round !important;
+    border: 10px solid black !important; background-color: rgba(191, 163, 151, .4); border-image: url(../borders-png-22972.png) 40 round !important;
 }
 .spellspg>section {
-    width: 33%; border-image: url(/borders-png-22972.png) 20 round !important; border-width: 2px !important;
+    width: 33%; border-image: url(../borders-png-22972.png) 20 round !important; border-width: 2px !important;
 }
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -175,7 +170,7 @@ main.login {
     padding: 2px 0;/*Other sections added here*/
 }
 #prof, #inspo, #passive {
-    width: 100%; height: 30px; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 100%; height: 30px; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 #prof, #passive, #speed, #init, #ac, #hpcurrent, #hpmax, #tmp, #totalhd, #hd, #abs, #dc, #bonus {
     text-align: center;/*Many number inputs here, not just abilities*/
@@ -184,7 +179,7 @@ main.login {
     text-align: center; align-items: center;
 }
 ul {
-    list-style-type: none; padding: 5px 0 0; padding-left: 10px !important; margin-bottom: 0 !important; font-size: smaller; border-top: 2px solid black; border-image: url(/borders-png-22972.png) 20 round;
+    list-style-type: none; padding: 5px 0 0; padding-left: 10px !important; margin-bottom: 0 !important; font-size: smaller; border-top: 2px solid black; border-image: url(../borders-png-22972.png) 20 round;
 }
 hr {
     margin: -2px 0 2px !important;
@@ -199,13 +194,13 @@ hr {
     display: grid; grid-template-columns: 1fr 1fr;
 }
 .ability>label {
-    border: 2px solid black; background-color: white; display: grid; grid-template-rows: 3fr 3fr 2fr; justify-content: space-around; border-image: url(/borders-png-22972.png) 20 round;
+    border: 2px solid black; background-color: white; display: grid; grid-template-rows: 3fr 3fr 2fr; justify-content: space-around; border-image: url(../borders-png-22972.png) 20 round;
 }
 .ability>label>input {
     width: 50px; height: 30px; border: none; background: transparent; margin: 0 auto;
 }
 .ability output {
-    border: 5px solid black; text-align: center; font-size: larger; border-image: url(/borders-png-22972.png) 10 round;
+    border: 5px solid black; text-align: center; font-size: larger; border-image: url(../borders-png-22972.png) 10 round;
 }
 .passive {
     display: grid; grid-template-columns: 1fr 3fr;
@@ -215,13 +210,13 @@ hr {
     display: flex; text-align: center; align-items: center; justify-content: space-between; /*flex-basis: 0;*/
 }
 .speed, .init, .ac {
-    border: 2px solid black; background-color: white; width: 80px; border-image: url(/borders-png-22972.png) 20 round;
+    border: 2px solid black; background-color: white; width: 80px; border-image: url(../borders-png-22972.png) 20 round;
 }
 .defense>label>input, .deftop input, #hpcurrent, #hd {
     width: 50px; height: 50px; border: none; background: transparent; margin: 0 auto;/*Other inputs added here*/
 }
 .hp {
-    border: 2px solid black; background-color: white; border-image: url(/borders-png-22972.png) 20 round;
+    border: 2px solid black; background-color: white; border-image: url(../borders-png-22972.png) 20 round;
 }
 #hpmax {
     border: none; border-bottom: 2px inset; background: transparent; width: 58%;
@@ -233,10 +228,10 @@ hr {
     display: flex; flex-direction: column; text-align: center; 
 }
 .defense>label {
-    border: 2px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around; border-image: url(/borders-png-22972.png) 20 round;
+    border: 2px solid black; background-color: white; display: grid; grid-template-rows: 3fr 1fr; justify-content: space-around; border-image: url(../borders-png-22972.png) 20 round;
 }
 .hd, .ds {
-    border: 2px solid black; background-color: white; width: 124px; border-image: url(/borders-png-22972.png) 20 round;
+    border: 2px solid black; background-color: white; width: 124px; border-image: url(../borders-png-22972.png) 20 round;
 }
 #totalhd {
     border: none; border-bottom: 2px inset; background: transparent; width: 70%;
@@ -254,19 +249,19 @@ hr {
     margin: 2px 0;
 }
 .person textarea {
-    width: 100%; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 100%; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 .attack>textarea {
-    width: 100%; height: 88%; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 100%; height: 88%; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 .other>textarea {
-    width: 100%; height: 75%; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 100%; height: 75%; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 .other, .features, .attack, .equip, .person {
     text-align: center;
 }
 #cp, #sp, #ep, #gp, #pp {
-    width: 26px; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 26px; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 .equip>aside {
     float: left; position: absolute; z-index: 1;
@@ -281,11 +276,11 @@ hr {
     width: 100%; height: 40%; margin-top: -5px; padding-top: 0; border-top: none;
 }
 .equip, .equip>label, .equip>textarea {
-    position: relative; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    position: relative; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
 .features {
     grid-row: 2/4; grid-column-start: 3;
 }
 .features>textarea {
-    width: 100%; height: 94.9%; border-image: url(/borders-png-22972.png) 20 round; border-width: 2px;
+    width: 100%; height: 94.9%; border-image: url(../borders-png-22972.png) 20 round; border-width: 2px;
 }
