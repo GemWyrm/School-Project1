@@ -7,11 +7,11 @@ html {
 }
 /*Set page size*/
 body {
-    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909 !important; font-family: 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif !important;
+    width: 8.5in; height: 11in; font-size: 10pt !important; margin: auto !important; color: #0A0909 !important; /*font-family: 'Alegreya Sans', 'Josefin Sans', 'Overpass', sans-serif !important;*/
 }
 @font-face {
     font-family: "Aggressive Winter";
-    src: url(./AgressiveWinter-MVdGp.ttf) format("truetype"), url(../AgressiveWinter-rgdAx.otf) format("opentype");
+    src: url(../AgressiveWinter-MVdGp.ttf) format("truetype"), url(../AgressiveWinter-rgdAx.otf) format("opentype");
 }
 @font-face {
     font-family: "Vtks Velhos Tempo";
