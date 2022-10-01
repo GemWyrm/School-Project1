@@ -7,4 +7,4 @@ Future improvements:
     1. Save information online and offline.
     2. Version history for players.
     3. Share to Game Master.
-[Character Sheet](/Login.html)
+To access project got to [Project](https://gemwyrm.github.io/School-Project1/Login.html) then click: [Character Sheet](/Login.html)
